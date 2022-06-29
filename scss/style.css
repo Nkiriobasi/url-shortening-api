@@ -67,7 +67,7 @@ img {
 }
 
 .generic-btn:hover {
-  background: hsl(180deg, 85%, 35%);
+  background: hsl(180deg, 77%, 72%);
 }
 
 .hd {
@@ -251,7 +251,7 @@ img {
   }
 }
 .hd .hd__nav .hd__nav-list-wrapper .hd__nav-btn-wrap .hd__nav-btn:last-child:hover {
-  background: hsl(180deg, 85%, 35%);
+  background: hsl(180deg, 77%, 72%);
 }
 
 .byb {

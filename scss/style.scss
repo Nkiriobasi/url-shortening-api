@@ -5,7 +5,7 @@
 $font-stack: 'Poppins', sans-serif;
 $primary-color: hsl(0, 0%, 100%);
 $cyan: hsl(180, 66%, 49%);
-$dark-cyan: hsl(180, 85%, 35%);
+$light-cyan: hsl(180, 77%, 72%);
 $dark-violet: hsl(257, 27%, 26%);
 $red: hsl(0, 87%, 67%);
 $gray: hsl(0, 0%, 75%);
@@ -80,7 +80,7 @@ img{
         font-size: 0.75rem;
     }
 }.generic-btn:hover{
-    background: $dark-cyan;
+    background: $light-cyan;
 }
 // Utils Ends
 
@@ -271,7 +271,7 @@ img{
                     }
 
                 }.hd__nav-btn:last-child:hover{
-                    background: $dark-cyan;
+                    background: $light-cyan;
                 }
             }
         }
