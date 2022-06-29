@@ -299,9 +299,12 @@ img {
     align-items: center;
   }
 }
+.byb .byb-content .content-item:last-child {
+  margin: 0 0 0 2rem;
+}
 @media only screen and (max-width : 787px) {
   .byb .byb-content .content-item:last-child {
-    margin-bottom: 2rem;
+    margin: 0 0 2rem;
   }
 }
 .byb .byb-content .byb-head-text {
