@@ -54,6 +54,16 @@ img {
   background: hsl(180deg, 66%, 49%);
   border: none;
 }
+@media only screen and (max-width : 787px) {
+  .generic-btn {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (max-width : 425px) {
+  .generic-btn {
+    font-size: 0.75rem;
+  }
+}
 
 .hd {
   margin-top: 1.25rem;
@@ -243,6 +253,16 @@ img {
   margin-top: 3.75rem;
   padding: 1.875rem 1.25rem 5.625rem;
 }
+@media only screen and (max-width : 787px) {
+  .byb {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width : 425px) {
+  .byb {
+    padding: 1.875rem 1.25rem 3.75rem;
+  }
+}
 .byb .byb-content {
   width: 100%;
   height: auto;
@@ -297,6 +317,11 @@ img {
     font-size: 2.25rem;
   }
 }
+@media only screen and (max-width : 425px) {
+  .byb .byb-content .byb-head-text {
+    font-size: 1.75rem;
+  }
+}
 .byb .byb-content .byb-p-text {
   width: inherit;
   max-width: 500px;
@@ -314,5 +339,10 @@ img {
 @media only screen and (max-width : 787px) {
   .byb .byb-content .byb-p-text {
     font-size: 1rem;
+  }
+}
+@media only screen and (max-width : 425px) {
+  .byb .byb-content .byb-p-text {
+    font-size: 0.875rem;
   }
 }/*# sourceMappingURL=style.css.map */
