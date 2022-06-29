@@ -70,6 +70,7 @@ img{
     color: $primary-color;
     background: $cyan;
     border: none;
+    cursor: pointer;
 
     @media #{$media-tablet}{
         font-size: 0.875rem;
@@ -78,6 +79,8 @@ img{
     @media #{$media-mobile}{
         font-size: 0.75rem;
     }
+}.generic-btn:hover{
+    background: $dark-cyan;
 }
 // Utils Ends
 

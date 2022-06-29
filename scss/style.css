@@ -53,6 +53,7 @@ img {
   color: hsl(0deg, 0%, 100%);
   background: hsl(180deg, 66%, 49%);
   border: none;
+  cursor: pointer;
 }
 @media only screen and (max-width : 787px) {
   .generic-btn {
@@ -63,6 +64,10 @@ img {
   .generic-btn {
     font-size: 0.75rem;
   }
+}
+
+.generic-btn:hover {
+  background: hsl(180deg, 85%, 35%);
 }
 
 .hd {
