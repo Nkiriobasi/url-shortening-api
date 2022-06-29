@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/ad7b718e42.js" crossorigin="anonymous"></script>
+  <script src="./script.js" defer></script>
   <title>Shortly URL shortening API Challenge</title>
   <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <header class="hd">
-    <nav class="hd__nav">
+  <header class="hd section">
+    <nav class="hd__nav container">
       <div class="hd__nav-top">
         <div class="logo-wrap nav-logo-wrap">
           <img src="./images/logo.svg" alt="logo">
         </div>
 
-        <div id="hamburger">
+        <div class="hamburger">
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-xmark"></i>
         </div>
@@ -27,64 +28,43 @@
       <div class="hd__nav-list-wrapper">
         <ul class="hd__nav-item-wrap">
           <li class="hd__nav-item">
-            <a href="#" class="hd__nav-link">features</a>
+            <a href="#" class="hd__nav-link menu-item">features</a>
           </li>
           <li class="hd__nav-item">
-            <a href="#" class="hd__nav-link">pricing</a>
+            <a href="#" class="hd__nav-link menu-item">pricing</a>
           </li>
           <li class="hd__nav-item">
-            <a href="#" class="hd__nav-link">resources</a>
+            <a href="#" class="hd__nav-link menu-item">resources</a>
           </li>
         </ul>
 
         <div class="hd__nav-btn-wrap">
-          <button class="hd__nav-btn">login</button>
-          <button class="hd__nav-btn">sign up</button>
+          <button class="hd__nav-btn menu-item">login</button>
+          <button class="hd__nav-btn menu-item">sign up</button>
         </div>
       </div>
     </nav>
   </header>
 
-
-
-
-  <!-- <nav class="navbar">
+  <!-- Byb section -->
+  <section class="byb section">
     <div class="container">
-
-      <div class="logo-wrap nav-logo-wrap">
-        <img src="./images/logo.svg" alt="logo">
-      </div>
-
-      <div class="navbar-flex-wrapper">
-       
-        <div class="navbar-flex-item">
-          <ul class="navbar-ul">
-            <li class="nav-list">
-              <a href="#" class="nav-link">features</a>
-            </li>
-            <li class="nav-list">
-              <a href="#" class="nav-link">pricing</a>
-            </li>
-            <li class="nav-list">
-              <a href="#" class="nav-link">resources</a>
-            </li>
-          </ul>
-        </div>
-        
-        
-        <div class="navbar-flex-item">
-          <button class="nav-btn">login</button>
-          <button class="nav-btn">sign up</button>
+      <div class="byb-content">
+        <div class="content-item">
+          <h1 class="byb-head-text">More than just <br/> shorter links</h1>
+          <p class="byb-p-text">Build your brand's recognition and get detailed 
+            insights on how your links are performing.
+          </p>
+          <button class="generic-btn">get started</button>
         </div>
 
-        
-        <div class="navbar-flex-item" id="hamburger">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-xmark"></i>
+        <div class="content-item">
+          <img src="./images/illustration-working.svg" alt="illustration-working">
         </div>
       </div>
     </div>
-  </nav> -->
+  </section>
+
 
 </body>
 </html>
