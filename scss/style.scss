@@ -82,6 +82,15 @@ img{
 }.generic-btn:hover{
     background: $light-cyan;
 }
+
+.input-error{
+    border-color: $red !important; 
+}
+
+.small-error{
+    visibility: visible !important;
+    color: $red !important;
+}
 // Utils Ends
 
 
@@ -373,6 +382,252 @@ img{
 
             @media #{$media-mobile}{
                 font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+
+// Short-stat
+.short-stat{
+    background: #eee;
+    width: 100%;
+    height: auto;
+    padding: 0 1.25rem;
+    margin-top: 5rem;
+
+    .shortener-link-section{
+        width: inherit;
+        height: inherit;
+        position: relative;
+        top: -5rem;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 5.625rem;
+
+        .link-shortener-wrapper{
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+            background: $dark-violet;
+            background-image: url(../images/bg-shorten-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right bottom;
+            padding: 4rem 3.75rem 2rem;
+
+    
+            .form-control{
+                width: inherit;
+                height: inherit;
+
+                input{
+                    display: inline-block;
+                    width: 700px;
+                    height: auto;
+                    padding: 0.875rem 1.5rem;
+                    border-radius: 10px;
+                    font-size: 1rem;
+                    border-color: $primary-color;
+                    font-family: $font-stack;
+                    font-weight: 400;
+                }
+
+                input::placeholder {
+                    font-size: 1rem;
+                    font-family: $font-stack;
+                    font-weight: 400;
+                    color: $gray;
+                }
+
+                .shortener-btn{
+                    display: inline-block;
+                    width: 170px;
+                    height: 57px;
+                    border-radius: 10px;
+                    border: none;
+                    font-family: $font-stack;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    background: $cyan;
+                    color: $primary-color;
+                    cursor: pointer;
+                }.shortener-btn:hover{
+                    background: $light-cyan;
+                }
+
+                small{
+                    display: block;
+                    width: auto;
+                    height: auto;
+                    line-height: 1;
+                    padding-top: 0.5rem;
+                    font-family: $font-stack;
+                    font-size: 12px;
+                    visibility: hidden;
+                }
+            }
+        }
+
+
+        .link-shortened-wrapper{
+            margin-top: 1.75rem;
+            width: inherit;
+            height: inherit;
+
+            .link-shortened-content-wrap{
+                width: inherit;
+                height: inherit;
+                background: $primary-color;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+                margin-bottom: 1rem;
+
+                .content-wrap{
+                    width: auto;
+                    height: inherit;
+                    font-family: $font-stack;
+                    font-size: 1rem;
+                    font-weight: 400;
+
+                    .initial-link{
+                        display: inline-block;
+                    }
+
+                    .new-link{
+                        display: inline-block;
+                    }
+
+                    .copy-link-btn{
+                        display: inline-block;
+                        width: auto;
+                        height: auto;
+                        line-height: 1.2;
+                        padding: 0.5rem 1rem;
+                        font-family: $font-stack;
+                        font-size: 0.875rem;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        border-radius: 5px;
+                        color: $primary-color;
+                        background: $cyan;
+                        border: none;
+                        cursor: pointer;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+
+            .link-shortened-content-wrap:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+    .advanced-stat-section{
+        width: inherit;
+        height: inherit;
+        padding-bottom: 7.5rem;
+
+        .advanced-stat-text-wrap{
+            width: inherit;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 6.25rem;
+
+            .advanced-stat-head-text{
+                width: inherit;
+                height: inherit;
+                line-height: 1;
+                text-align: center;
+                color: $very-dark-violet;
+                text-transform: capitalize;
+                font-family: $font-stack;
+                font-size: 2.875rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+    
+            .advanced-stat-p-text{
+                max-width: 520px;
+                width: inherit;
+                height: inherit;
+                text-align: center;
+                color: $grayish-violet;
+                font-family: $font-stack;
+                font-size: 1.125rem;
+                font-weight: 400;
+            }
+        }
+
+        .advanced-stat-flex-wrapper{
+            width: inherit;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .advanced-stat-flex-item{
+                width: auto;
+                height: inherit;
+                background: $primary-color;
+                padding: 0 2rem 0;
+                border-radius: 5px;
+
+                .advanced-stat-flex-item-content{
+                    width: inherit;
+                    height: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    position: relative;
+                    bottom: 2.75rem;
+                    left: 0;
+                }
+
+                .advanced-stat-icon-wrap{
+                    width: 90px;
+                    height: 90px;
+                    background: $dark-violet;
+                    border-radius: 100%;
+                    padding: 1.625rem;
+                    margin-bottom: 1.875rem;
+                }
+
+
+                .stat-flex-item-head-text{
+                    width: inherit;
+                    height: inherit;
+                    line-height: 1.2;
+                    text-transform: capitalize;
+                    font-size: 1.25rem;
+                    color: $very-dark-violet;
+                    font-family: $font-stack;
+                    margin-bottom: 1rem;
+                }
+
+                .stat-flex-item-p-text{
+                    width: inherit;
+                    height: inherit;
+                    line-height: 1.6;
+                    font-size: 14px;
+                    color: $grayish-violet;
+                    font-family: $font-stack;
+                }
+            }
+
+            .advanced-stat-flex-item:nth-child(2){
+                margin: 0 1.5rem;
             }
         }
     }
