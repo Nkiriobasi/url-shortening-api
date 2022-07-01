@@ -683,4 +683,121 @@ img {
 .boost-link .boost-link-content .boost-link-head-text {
   line-height: 1.3;
   color: hsl(0deg, 0%, 100%);
+}
+
+.footer {
+  background: hsl(260deg, 8%, 14%);
+  padding: 2.875rem 1.25rem;
+}
+.footer .footer-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (max-width : 787px) {
+  .footer .footer-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.footer .footer-content .footer-logo-wrap {
+  margin-right: 5rem;
+}
+@media only screen and (max-width : 1087px) {
+  .footer .footer-content .footer-logo-wrap {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width : 787px) {
+  .footer .footer-content .footer-logo-wrap {
+    margin-bottom: 2.875rem;
+  }
+}
+.footer .footer-content .footer-item {
+  width: auto;
+  height: inherit;
+  margin-bottom: 2.875rem;
+}
+.footer .footer-content .footer-item .ft-item-content {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+@media only screen and (max-width : 787px) {
+  .footer .footer-content .footer-item .ft-item-content {
+    align-items: center;
+  }
+}
+.footer .footer-content .footer-item .ft-item-content .ft-item-head-text {
+  width: inherit;
+  height: inherit;
+  line-height: 1.3;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1.5rem;
+}
+@media only screen and (max-width : 425px) {
+  .footer .footer-content .footer-item .ft-item-content .ft-item-head-text {
+    font-size: 0.75rem;
+  }
+}
+.footer .footer-content .footer-item .ft-item-content .ft-item-p-text {
+  width: inherit;
+  height: inherit;
+  line-height: 1.3;
+  font-size: 0.875rem;
+  color: hsl(0deg, 0%, 75%);
+  margin-bottom: 0.875rem;
+  cursor: pointer;
+}
+@media only screen and (max-width : 425px) {
+  .footer .footer-content .footer-item .ft-item-content .ft-item-p-text {
+    font-size: 0.75rem;
+  }
+}
+.footer .footer-content .footer-item .ft-item-content .ft-item-p-text:hover {
+  color: hsl(180deg, 66%, 49%);
+}
+.footer .footer-content .footer-item .ft-item-content .ft-item-p-text:last-child {
+  margin-bottom: 0;
+}
+.footer .footer-content .footer-social-icons {
+  width: auto;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer .footer-content .footer-social-icons .footer-icon-wrap {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+}
+@media only screen and (max-width : 425px) {
+  .footer .footer-content .footer-social-icons .footer-icon-wrap {
+    width: 18px;
+    height: 18px;
+  }
+}
+.footer .footer-content .footer-social-icons .footer-icon-wrap svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.footer .footer-content .footer-social-icons .footer-icon-wrap svg:hover {
+  fill: hsl(180deg, 66%, 49%);
+}
+.footer .footer-content .footer-social-icons .footer-icon-wrap:first-child {
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */
