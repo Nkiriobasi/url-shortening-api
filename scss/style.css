@@ -40,6 +40,26 @@ img {
   height: 100%;
 }
 
+.head-text {
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width : 1087px) {
+  .head-text {
+    font-size: 2.375rem;
+  }
+}
+@media only screen and (max-width : 425px) {
+  .head-text {
+    font-size: 1.75rem;
+  }
+}
+
 .generic-btn {
   width: auto;
   height: auto;
@@ -367,8 +387,6 @@ img {
 
 .short-stat {
   background: #eee;
-  width: 100%;
-  height: auto;
   padding: 0 1.25rem;
 }
 .short-stat .shortener-link-section {
@@ -516,26 +534,9 @@ img {
   margin-bottom: 6.25rem;
 }
 .short-stat .advanced-stat-section .advanced-stat-text-wrap .advanced-stat-head-text {
-  width: inherit;
-  height: inherit;
   line-height: 1;
-  text-align: center;
   color: hsl(260deg, 8%, 14%);
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
-  font-size: 2.875rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-@media only screen and (max-width : 1087px) {
-  .short-stat .advanced-stat-section .advanced-stat-text-wrap .advanced-stat-head-text {
-    font-size: 2.375rem;
-  }
-}
-@media only screen and (max-width : 425px) {
-  .short-stat .advanced-stat-section .advanced-stat-text-wrap .advanced-stat-head-text {
-    font-size: 1.75rem;
-  }
 }
 .short-stat .advanced-stat-section .advanced-stat-text-wrap .advanced-stat-p-text {
   max-width: 520px;
@@ -657,4 +658,29 @@ img {
   .short-stat .advanced-stat-section .advanced-stat-flex-wrapper .advanced-stat-flex-item:nth-child(2) {
     margin: 4rem 0;
   }
+}
+
+.boost-link {
+  background: hsl(257deg, 27%, 26%);
+  background-image: url(../images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 2.875rem 1.25rem;
+}
+@media only screen and (max-width : 425px) {
+  .boost-link {
+    background-image: url(../images/bg-boost-mobile.svg);
+  }
+}
+.boost-link .boost-link-content {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boost-link .boost-link-content .boost-link-head-text {
+  line-height: 1.3;
+  color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */
