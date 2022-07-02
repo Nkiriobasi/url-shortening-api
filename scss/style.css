@@ -289,13 +289,12 @@ img {
 }
 @media only screen and (max-width : 787px) {
   .byb {
-    margin: 0 0 2.5rem;
-    padding: 1.875rem 1.25rem 5.625rem;
+    margin: 0 0 5rem;
   }
 }
 @media only screen and (max-width : 425px) {
   .byb {
-    padding: 1.875rem 1.25rem 3.75rem;
+    padding: 1.875rem 1.25rem 5.625rem;
   }
 }
 .byb .byb-content {
@@ -393,11 +392,14 @@ img {
   width: inherit;
   height: inherit;
   position: relative;
-  top: -5rem;
   left: 0;
-  bottom: 0;
-  right: 0;
+  bottom: 5rem;
   margin-bottom: 5.625rem;
+}
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section {
+    margin-bottom: 3.75rem;
+  }
 }
 .short-stat .shortener-link-section .link-shortener-wrapper {
   width: inherit;
@@ -406,17 +408,46 @@ img {
   background: hsl(257deg, 27%, 26%);
   background-image: url(../images/bg-shorten-desktop.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 120%;
   background-position: right bottom;
-  padding: 4rem 3.75rem 2rem;
+  padding: 3.75rem 3.75rem 1.875rem;
+}
+@media only screen and (max-width : 1087px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper {
+    padding: 3.75rem 1.875rem 1.875rem;
+  }
+}
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper {
+    padding: 1.875rem;
+  }
 }
 .short-stat .shortener-link-section .link-shortener-wrapper .form-control {
   width: inherit;
   height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.short-stat .shortener-link-section .link-shortener-wrapper .form-control input {
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl {
+  width: auto;
+}
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl {
+    width: 100%;
+  }
+}
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input {
   display: inline-block;
-  width: 700px;
+  width: 500px;
   height: auto;
   padding: 0.875rem 1.5rem;
   border-radius: 10px;
@@ -424,26 +455,59 @@ img {
   border-color: hsl(0deg, 0%, 100%);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  outline: none;
 }
-.short-stat .shortener-link-section .link-shortener-wrapper .form-control input::-moz-placeholder {
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width : 425px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input {
+    padding: 0.75rem;
+  }
+}
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input::-moz-placeholder {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: hsl(0deg, 0%, 75%);
 }
-.short-stat .shortener-link-section .link-shortener-wrapper .form-control input:-ms-input-placeholder {
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input:-ms-input-placeholder {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: hsl(0deg, 0%, 75%);
 }
-.short-stat .shortener-link-section .link-shortener-wrapper .form-control input::placeholder {
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input::placeholder {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: hsl(0deg, 0%, 75%);
 }
-.short-stat .shortener-link-section .link-shortener-wrapper .form-control .shortener-btn {
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input::-moz-placeholder {
+    font-size: 0.75rem;
+  }
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl input::placeholder {
+    font-size: 0.75rem;
+  }
+}
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl small {
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  padding-top: 0.375rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  visibility: hidden;
+}
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl .shortener-btn {
   display: inline-block;
   width: 170px;
   height: 57px;
@@ -456,18 +520,28 @@ img {
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
 }
-.short-stat .shortener-link-section .link-shortener-wrapper .form-control .shortener-btn:hover {
+@media only screen and (max-width : 1087px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl .shortener-btn {
+    width: 140px;
+  }
+}
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl .shortener-btn {
+    margin: 1.875rem 0 0;
+    height: 50px;
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (max-width : 425px) {
+  .short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl .shortener-btn {
+    font-size: 0.75rem;
+  }
+}
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl .shortener-btn:hover {
   background: hsl(180deg, 77%, 72%);
 }
-.short-stat .shortener-link-section .link-shortener-wrapper .form-control small {
-  display: block;
-  width: auto;
-  height: auto;
-  line-height: 1;
-  padding-top: 0.5rem;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  visibility: hidden;
+.short-stat .shortener-link-section .link-shortener-wrapper .form-control .fcontrl:last-child {
+  text-align: center;
 }
 .short-stat .shortener-link-section .link-shortened-wrapper {
   margin-top: 1.75rem;
@@ -486,6 +560,13 @@ img {
   padding: 1rem;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+}
 .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap {
   width: auto;
   height: inherit;
@@ -493,11 +574,32 @@ img {
   font-size: 1rem;
   font-weight: 400;
 }
-.short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .initial-link {
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap {
+    width: 100%;
+    text-align: center;
+  }
+}
+.short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .p-link {
+  font-size: 1rem;
   display: inline-block;
 }
-.short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .new-link {
-  display: inline-block;
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .p-link {
+    font-size: 0.875rem;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+}
+@media only screen and (max-width : 425px) {
+  .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .p-link {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .p-link:last-child {
+    border-bottom: 1px solid hsl(257deg, 27%, 26%);
+  }
 }
 .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .copy-link-btn {
   display: inline-block;
@@ -515,6 +617,19 @@ img {
   border: none;
   cursor: pointer;
   margin-left: 1rem;
+}
+@media only screen and (max-width : 787px) {
+  .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .copy-link-btn {
+    margin: 0.5rem 0;
+  }
+}
+@media only screen and (max-width : 425px) {
+  .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .copy-link-btn {
+    font-size: 0.75rem;
+  }
+}
+.short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap .content-wrap .copy-link-btn:hover {
+  background: hsl(180deg, 77%, 72%);
 }
 .short-stat .shortener-link-section .link-shortened-wrapper .link-shortened-content-wrap:last-child {
   margin-bottom: 0;
