@@ -505,11 +505,12 @@ section {
   }
 }
 .advanced-stat .advanced-stat-flex-wrapper .advanced-stat-flex-item .advanced-stat-flex-paragraph {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
+  color: hsl(257deg, 27%, 26%);
 }
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 1024px) {
   .advanced-stat .advanced-stat-flex-wrapper .advanced-stat-flex-item .advanced-stat-flex-paragraph {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
 }
 .advanced-stat .advanced-stat-flex-wrapper .advanced-stat-flex-item:nth-child(2) {

@@ -13,7 +13,7 @@ $grayish-violet: hsl(257, 7%, 63%);
 $very-dark-blue: hsl(255, 11%, 22%);
 $very-dark-violet: hsl(260, 8%, 14%);
 
-$media-desktop: "only screen and (max-width : 1440px)";
+
 $media-labtop: "only screen and (max-width : 1024px)";
 $media-tablet: "only screen and (max-width : 768px)";
 $media-mobile: "only screen and (max-width : 600px)";
@@ -516,10 +516,11 @@ section{
             }
             
             .advanced-stat-flex-paragraph{
-                font-size: 0.75rem;
+                font-size: 0.875rem;
+                color: $dark-violet;
 
-                @media #{$media-tablet}{
-                    font-size: 0.625rem;
+                @media #{$media-labtop}{
+                    font-size: 0.75rem;
                 }
             }
 
