@@ -160,28 +160,34 @@ body {
 }
 @media only screen and (max-width : 600px) {
   .byb .byb__container .byb-text-content .byb-p-text {
-    font-size: 0.875rem;
     max-width: 100%;
   }
 }
-.byb .byb__container .img-content {
+@media only screen and (max-width : 425px) {
+  .byb .byb__container .byb-text-content .byb-p-text {
+    font-size: 0.875rem;
+  }
+}
+.byb .byb__container .byb-img-content {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: flex-end;
 }
 @media only screen and (max-width : 600px) {
-  .byb .byb__container .img-content {
+  .byb .byb__container .byb-img-content {
     justify-content: center;
     margin-bottom: 2rem;
   }
 }
-.byb .byb__container .img-content img {
+.byb .byb__container .byb-img-content img {
   width: 95%;
+  margin-left: 28px;
 }
 @media only screen and (max-width : 600px) {
-  .byb .byb__container .img-content img {
-    width: 100%;
+  .byb .byb__container .byb-img-content img {
+    width: 80%;
+    margin-left: 0;
   }
 }
 
@@ -228,7 +234,7 @@ body {
 @media only screen and (max-width : 600px) {
   .link-input .input-container input {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 0.75rem;
   }
 }
@@ -412,7 +418,7 @@ body {
     font-size: 1rem;
   }
 }
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 425px) {
   .advanced-stat .advanced-stat-text-content .advanced-stat-p-text {
     font-size: 0.875rem;
   }

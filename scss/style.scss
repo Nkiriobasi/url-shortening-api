@@ -187,13 +187,16 @@ body{
                 }
 
                 @media #{$media-mobile}{
-                    font-size: 0.875rem;
                     max-width: 100%;
+                }
+
+                @media #{$media-mobile-sm}{
+                    font-size: 0.875rem;
                 }
             }
         }
 
-        .img-content{
+        .byb-img-content{
             width: 100%;
             height: auto;
             display: flex;
@@ -206,9 +209,11 @@ body{
 
             img{
                 width: 95%;
+                margin-left: 28px;
 
                 @media #{$media-mobile}{
-                    width: 100%;
+                    width: 80%;
+                    margin-left: 0;
                 }
             }
         }
@@ -257,7 +262,7 @@ body{
 
             @media #{$media-mobile}{
                 width: 100%;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
                 font-size: 0.75rem;
             }
         }
@@ -426,7 +431,7 @@ body{
                 font-size: 1rem;
             }
 
-            @media #{$media-mobile}{
+            @media #{$media-mobile-sm}{
                 font-size: 0.875rem;
             }
         }
