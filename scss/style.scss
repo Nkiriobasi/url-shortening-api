@@ -540,6 +540,10 @@ body{
     background-repeat: no-repeat;
     background-position: 100%;
     
+    @media #{$media-mobile}{
+        background-image: url(../images/bg-boost-mobile.svg);
+    }
+    
     .bylt-text-content{
         width: 100%;
         height: 120px;

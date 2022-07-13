@@ -519,6 +519,11 @@ body {
   background-repeat: no-repeat;
   background-position: 100%;
 }
+@media only screen and (max-width : 600px) {
+  .bylt {
+    background-image: url(../images/bg-boost-mobile.svg);
+  }
+}
 .bylt .bylt-text-content {
   width: 100%;
   height: 120px;
