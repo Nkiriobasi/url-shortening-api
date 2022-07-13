@@ -225,6 +225,9 @@ body{
         height: auto;
         padding: 2.5rem 2rem;
         background: $dark-violet;
+        background-image: url(../images/bg-shorten-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -234,6 +237,7 @@ body{
 
         @media #{$media-mobile}{
             flex-direction: column;
+            background-image: url(../images/bg-shorten-mobile.svg);
         }
 
         input{
