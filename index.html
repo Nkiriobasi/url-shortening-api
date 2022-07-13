@@ -4,12 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="https://kit.fontawesome.com/ad7b718e42.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ad7b718e42.js" crossorigin="anonymous" defer></script>
   <script src="./script.js" defer></script>
-  <title>Shortly URL shortening API Challenge</title>
+  <title>URL shortener</title>
   <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
+  
+  <!-- header -->
+  <header class="header">
+    <div class="container header__container">
+      <div class="left">
+        <div class="logo-container">
+          <img src="./images/logo.svg" alt="logo"/>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">feature</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">resources</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">login</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active">sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="hambuger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main>
+
+    <!-- byb -->
+    <section class="byb section">
+      <div class="container byb__container">
+        <div class="byb-text-content">
+          <h1 class="byb-head-text">More than just <br/> shorter links</h1>
+          <p class="byb-p-text">Build your brand's recognition and get detailed insights 
+            on how your links are performing.
+          </p>
+          <button class="byb-btn">Get started</button>
+        </div>
+
+        <div class="img-content">
+          <img src="./images/illustration-working.svg" alt="image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- link-input -->
+    <section class="link-input section">
+      <div class="container">
+        <form class="input-container">
+          <input type="text" placeholder="Shorten a link here..." required />
+          <button type="submit" class="input-btn">shorten it!</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- link-result -->
+    <section class="link-result section">
+      <div class="link-result__container">
+        <div class="result">
+          <p class="initialUrl">https://www.frontendmentor.io</p>
+
+          <div class="newUrl-wrap">
+            <p class="newUrl">https://rel.ink/k4lKyk</p>
+            <button class="newUrl-btn">Copy</button>
+          </div>
+        </div>
+        <div class="result">
+          <p class="initialUrl">https://www.frontendmentor.io</p>
+
+          <div class="newUrl-wrap">
+            <p class="newUrl">https://rel.ink/k4lKyk</p>
+            <button class="newUrl-btn">Copy</button>
+          </div>
+        </div>
+        <div class="result">
+          <p class="initialUrl">https://www.frontendmentor.io</p>
+
+          <div class="newUrl-wrap">
+            <p class="newUrl">https://rel.ink/k4lKyk</p>
+            <button class="newUrl-btn">Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- advanced stat -->
+    <section class="advanced-stat section">
+      <div class="container">
+        <div class="advanced-stat-text-content">
+          <h1 class="advanced-stat-head-text">advanced statistics</h1>
+          <p class="advanced-stat-p-text">Track how your links are performing across the web 
+            with our advanced statistics dashboard.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <!-- footer -->
+  <footer></footer>
 
 </body>
 </html>
