@@ -344,7 +344,12 @@ section{
         }
 
         .initialUrl{
-            font-size: 0.75rem;
+            font-size: 0.875rem;
+            color: $dark-violet;
+
+            @media #{$media-labtop}{
+                font-size: 0.75rem;
+            }
 
             @media #{$media-tablet}{
                 font-size: 0.625rem;
@@ -372,8 +377,13 @@ section{
             }
 
             .newUrl{
-                font-size: 0.75rem;
+                font-size: 0.875rem;
                 margin-right: 1rem;
+                color: $dark-violet;
+
+                @media #{$media-labtop}{
+                    font-size: 0.75rem;
+                }
 
                 @media #{$media-tablet}{
                     font-size: 0.625rem;
