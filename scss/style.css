@@ -17,7 +17,7 @@ body {
   margin: 0 auto;
 }
 
-.section {
+section {
   width: 100%;
   height: auto;
 }
@@ -79,11 +79,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.header .header__container .left .logo-container {
+.header .header__container .left .logo-wrapper {
   width: 121px;
   height: 33px;
 }
-.header .header__container .left .logo-container img {
+.header .header__container .left .logo-wrapper img {
   width: 100%;
   height: 100%;
 }
