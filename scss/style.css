@@ -34,6 +34,10 @@ body {
   border-radius: 25px;
 }
 
+.button:hover {
+  background: hsl(180deg, 71%, 70%);
+}
+
 .active {
   background: hsl(180deg, 66%, 49%);
   color: hsl(0deg, 0%, 100%) !important;
@@ -52,7 +56,7 @@ body {
 }
 @media only screen and (max-width : 600px) {
   .head-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -298,6 +302,9 @@ body {
     font-size: 0.75rem;
   }
 }
+.link-input .input-container .input-btn:hover {
+  background: hsl(180deg, 71%, 70%);
+}
 
 .link-result {
   padding: 0 1.25rem 3.75rem;
@@ -388,6 +395,9 @@ body {
   .link-result .result .newUrl-wrap .newUrl-btn {
     font-size: 0.625rem;
   }
+}
+.link-result .result .newUrl-wrap .newUrl-btn:hover {
+  background: hsl(180deg, 71%, 70%);
 }
 .link-result .result:last-child {
   margin-bottom: 0;

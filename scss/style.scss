@@ -5,6 +5,7 @@
 $font-stack: 'Poppins', sans-serif;
 $primary-color: hsl(0, 0%, 100%);
 $cyan: hsl(180, 66%, 49%);
+$light-cyan: hsl(180, 71%, 70%);
 $dark-violet: hsl(257, 27%, 26%);
 $red: hsl(0, 87%, 67%);
 $gray: hsl(0, 0%, 75%);
@@ -51,6 +52,8 @@ body{
     font-size: 14px;
     font-family: $font-stack;
     border-radius: 25px;
+}.button:hover{
+    background: $light-cyan;
 }
 
 .active{
@@ -69,7 +72,7 @@ body{
     }
 
     @media #{$media-mobile}{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -303,6 +306,8 @@ body{
                 margin-left: 0;
                 font-size: 0.75rem;
             }
+        }.input-btn:hover{
+            background: $light-cyan;
         }
     }
 }
@@ -395,6 +400,8 @@ body{
                 @media #{$media-tablet}{
                     font-size: 0.625rem;
                 }
+            }.newUrl-btn:hover{
+                background: $light-cyan;
             }
         }
     }
