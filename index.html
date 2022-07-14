@@ -62,8 +62,8 @@
     <!-- link-input -->
     <section class="link-input">
       <div class="container">
-        <form class="input-container">
-          <input type="text" placeholder="Shorten a link here..." required />
+        <form id="form" class="input-container">
+          <input id="urlinput"  type="url" placeholder="Shorten a link here..." required />
           <button type="submit" class="input-btn">shorten it!</button>
         </form>
       </div>
@@ -71,29 +71,13 @@
 
     <!-- link-result -->
     <section class="link-result">
-      <div class="link-result__container">
+      <div id="linkRc" class="link-result__container">
         <div class="result">
-          <p class="initialUrl">https://www.frontendmentor.io</p>
+          <p class="longUrl">https://www.frontendmentor.io</p>
 
-          <div class="newUrl-wrap">
-            <p class="newUrl">https://rel.ink/k4lKyk</p>
-            <button class="newUrl-btn">Copy</button>
-          </div>
-        </div>
-        <div class="result">
-          <p class="initialUrl">https://www.frontendmentor.io</p>
-
-          <div class="newUrl-wrap">
-            <p class="newUrl">https://rel.ink/k4lKyk</p>
-            <button class="newUrl-btn">Copy</button>
-          </div>
-        </div>
-        <div class="result">
-          <p class="initialUrl">https://www.frontendmentor.io</p>
-
-          <div class="newUrl-wrap">
-            <p class="newUrl">https://rel.ink/k4lKyk</p>
-            <button class="newUrl-btn">Copy</button>
+          <div class="shortUrl-wrap">
+            <p class="shortUrl">https://rel.ink/k4lKyk</p>
+            <button class="shortUrl-btn">Copy</button>
           </div>
         </div>
       </div>

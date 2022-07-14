@@ -44,7 +44,7 @@ section {
 }
 
 .button:hover {
-  background: hsl(180deg, 71%, 70%);
+  background: hsl(180deg, 71%, 63%);
 }
 
 .active {
@@ -304,7 +304,7 @@ section {
   }
 }
 .link-input .input-container .input-btn:hover {
-  background: hsl(180deg, 71%, 70%);
+  background: hsl(180deg, 71%, 63%);
 }
 
 .link-result {
@@ -337,63 +337,63 @@ section {
     padding: 0;
   }
 }
-.link-result .result .initialUrl {
+.link-result .result .longUrl {
   font-size: 0.875rem;
   color: hsl(257deg, 27%, 26%);
 }
 @media only screen and (max-width : 1024px) {
-  .link-result .result .initialUrl {
+  .link-result .result .longUrl {
     font-size: 0.75rem;
   }
 }
 @media only screen and (max-width : 768px) {
-  .link-result .result .initialUrl {
+  .link-result .result .longUrl {
     font-size: 0.625rem;
   }
 }
 @media only screen and (max-width : 600px) {
-  .link-result .result .initialUrl {
+  .link-result .result .longUrl {
     width: 100%;
     text-align: center;
     padding: 1rem 0.5rem;
   }
 }
-.link-result .result .newUrl-wrap {
+.link-result .result .shortUrl-wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 @media only screen and (max-width : 600px) {
-  .link-result .result .newUrl-wrap {
+  .link-result .result .shortUrl-wrap {
     width: 100%;
     flex-direction: column;
     padding: 1rem 0.5rem;
     border-top: 1px solid hsl(257deg, 27%, 26%);
   }
 }
-.link-result .result .newUrl-wrap .newUrl {
+.link-result .result .shortUrl-wrap .shortUrl {
   font-size: 0.875rem;
   margin-right: 1rem;
   color: hsl(257deg, 27%, 26%);
 }
 @media only screen and (max-width : 1024px) {
-  .link-result .result .newUrl-wrap .newUrl {
+  .link-result .result .shortUrl-wrap .shortUrl {
     font-size: 0.75rem;
   }
 }
 @media only screen and (max-width : 768px) {
-  .link-result .result .newUrl-wrap .newUrl {
+  .link-result .result .shortUrl-wrap .shortUrl {
     font-size: 0.625rem;
   }
 }
 @media only screen and (max-width : 600px) {
-  .link-result .result .newUrl-wrap .newUrl {
+  .link-result .result .shortUrl-wrap .shortUrl {
     margin-right: 0;
     margin-bottom: 1rem;
   }
 }
-.link-result .result .newUrl-wrap .newUrl-btn {
+.link-result .result .shortUrl-wrap .shortUrl-btn {
   padding: 0.25rem 1.25rem;
   border-radius: 0.375rem;
   border: none;
@@ -405,12 +405,12 @@ section {
   cursor: pointer;
 }
 @media only screen and (max-width : 768px) {
-  .link-result .result .newUrl-wrap .newUrl-btn {
+  .link-result .result .shortUrl-wrap .shortUrl-btn {
     font-size: 0.625rem;
   }
 }
-.link-result .result .newUrl-wrap .newUrl-btn:hover {
-  background: hsl(180deg, 71%, 70%);
+.link-result .result .shortUrl-wrap .shortUrl-btn:hover {
+  background: hsl(180deg, 71%, 63%);
 }
 .link-result .result:last-child {
   margin-bottom: 0;

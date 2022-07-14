@@ -5,7 +5,7 @@
 $font-stack: 'Poppins', sans-serif;
 $primary-color: hsl(0, 0%, 100%);
 $cyan: hsl(180, 66%, 49%);
-$light-cyan: hsl(180, 71%, 70%);
+$light-cyan: hsl(180, 71%, 63%);
 $dark-violet: hsl(257, 27%, 26%);
 $red: hsl(0, 87%, 67%);
 $gray: hsl(0, 0%, 75%);
@@ -341,7 +341,7 @@ section{
             padding: 0;
         }
 
-        .initialUrl{
+        .longUrl{
             font-size: 0.875rem;
             color: $dark-violet;
 
@@ -361,7 +361,7 @@ section{
         }
 
 
-        .newUrl-wrap{
+        .shortUrl-wrap{
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -374,7 +374,7 @@ section{
                 border-top: 1px solid $dark-violet;
             }
 
-            .newUrl{
+            .shortUrl{
                 font-size: 0.875rem;
                 margin-right: 1rem;
                 color: $dark-violet;
@@ -394,7 +394,7 @@ section{
 
             }
 
-            .newUrl-btn{
+            .shortUrl-btn{
                 padding: 0.25rem 1.25rem;
                 border-radius: 0.375rem;
                 border: none;
@@ -408,7 +408,7 @@ section{
                 @media #{$media-tablet}{
                     font-size: 0.625rem;
                 }
-            }.newUrl-btn:hover{
+            }.shortUrl-btn:hover{
                 background: $light-cyan;
             }
         }
