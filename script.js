@@ -55,8 +55,15 @@ form.addEventListener('submit', e => {
         result.appendChild(longUrl);
         result.appendChild(shortUrlWrap);
 
-        linkRc.appendChild(result);
-        
+        linkRc.prepend(result);
+
+        const copyBtn = selectElement('.shortUrl-btn');
+        copyBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText(copyBtn.previousElementSibling.textContent);
+            copyBtn.innerHTML = 'Copied!';
+            copyBtn.style.backgroundColor = 'hsl(257, 27%, 26%)';
+        });
+
         // clear input field
         form.reset();
     })
