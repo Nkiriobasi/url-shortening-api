@@ -4,10 +4,17 @@ const selectElement = (selector) => {
     throw new Error(`Cannot find element ${selector}`);
 }
 
+
+const hambuger = selectElement(".hambuger");
 const form = selectElement('#form');
 const input = selectElement('#urlinput');
 const linkRc = selectElement('#linkRc');
 
+
+hambuger.addEventListener('click', () => {
+    navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('hide');
+});
 
 
 form.addEventListener('submit', e => {
