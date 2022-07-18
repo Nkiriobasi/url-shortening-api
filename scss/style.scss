@@ -69,6 +69,8 @@ section{
     background: $cyan;
     color: $primary-color !important;
     border-radius: 25px;
+}.active:hover{
+    background: $light-cyan;
 }
 
 .head-text{
@@ -151,6 +153,8 @@ section{
                     @media #{$media-tablet}{
                         font-size: 0.75rem;
                     }
+                }.nav-link:hover{
+                    color: $dark-violet;
                 }
             }
         }

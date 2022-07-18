@@ -54,6 +54,10 @@ section {
   border-radius: 25px;
 }
 
+.active:hover {
+  background: hsl(180deg, 71%, 63%);
+}
+
 .head-text {
   line-height: 1.2;
   font-size: 1.875rem;
@@ -132,6 +136,9 @@ section {
   .header .container .nav-menu .nav-item .nav-link {
     font-size: 0.75rem;
   }
+}
+.header .container .nav-menu .nav-item .nav-link:hover {
+  color: hsl(257deg, 27%, 26%);
 }
 .header .container .hide {
   height: 0;
