@@ -549,6 +549,7 @@ section{
             .advanced-stat-flex-paragraph{
                 font-size: 0.875rem;
                 color: $dark-violet;
+                margin: 0 0 auto 0;
 
                 @media #{$media-labtop}{
                     font-size: 0.75rem;
